@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Final SI - Komponen SI</title>
+    <link rel="stylesheet" href="style.css">
+</head> <script>
+    // Cek status login saat halaman dimuat
+    window.onload = function() {
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
+        if (!isLoggedIn || isLoggedIn !== "true") {
+            // Jika tidak login, arahkan ke halaman login
+            window.location.href = "login.html";
+        }
+    }
+</script>
+<body>
+   <nav>
+    <ul>
+        <li><a href="index.html">Data Diri</a></li>
+        <li><a href="materi_si.html">Konsep Dasar SI</a></li>
+        <li><a href="jenis_si.html">Jenis-Jenis SI</a></li>
+        <li><a href="komponen_si.html">Komponen SI</a></li>
+        <li><a href="kesimpulan.html">Kesimpulan</a></li>
+        <li><a href="javascript:void(0)" onclick="logout()">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- Tambahkan fungsi logout di bagian akhir sebelum tag </body> -->
+<script>
+    function logout() {
+        // Hapus status login dari penyimpanan lokal
+        localStorage.removeItem("isLoggedIn");
+        // Arahkan ke halaman login
+        window.location.href = "login.html";
+    }
+</script>
+
+    <!-- Konten Utama -->
+    <div class="container">
+        <h1>HALAMAN 4: KOMPONEN SISTEM INFORMASI</h1>
+
+        <p>Sistem Informasi terdiri dari beberapa komponen utama yang saling mendukung, yaitu:</p>
+
+        <h3>1. Sumber Daya Manusia</h3>
+        <p>Termasuk pengguna akhir, analis sistem, programmer, dan manajer sistem yang bertanggung jawab atas pengoperasian dan pemeliharaan SI. Tanpa manusia, sistem tidak dapat berjalan dengan optimal dan tidak dapat menghasilkan informasi yang berguna.</p>
+
+        <h3>2. Data</h3>
+        <p>Merupakan bahan mentah yang diolah menjadi informasi. Data dapat berupa angka, teks, gambar, atau suara yang terkait dengan aktivitas bisnis organisasi.</p>
+
+        <h3>3. Perangkat Keras</h3>
+        <p>Termasuk semua perangkat fisik yang digunakan dalam SI, seperti komputer, server, printer, scanner, perangkat jaringan, dan penyimpanan data.</p>
+
+        <h3>4. Perangkat Lunak</h3>
+        <p>Merupakan program atau instruksi yang mengontrol perangkat keras untuk melakukan tugas tertentu, seperti sistem operasi, aplikasi bisnis, dan perangkat lunak basis data.</p>
+
+        <h3>5. Jaringan</h3>
+        <p>Menghubungkan berbagai perangkat keras agar dapat berkomunikasi dan bertukar data satu sama lain. Contohnya jaringan lokal (LAN) dan jaringan luas (WAN).</p>
+
+        <h3>6. Prosedur Kerja</h3>
+        <p>Merupakan aturan dan langkah-langkah yang harus diikuti dalam penggunaan, pengelolaan, dan pemeliharaan SI agar dapat berjalan dengan benar dan aman.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 [Nama Anda] - Tugas Final Konsep Sistem Informasi</p>
+    </footer>
+</body>
+</html>

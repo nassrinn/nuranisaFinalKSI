@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Final SI - Konsep Dasar SI</title>
+    <link rel="stylesheet" href="style.css">
+</head> <script>
+    // Cek status login saat halaman dimuat
+    window.onload = function() {
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
+        if (!isLoggedIn || isLoggedIn !== "true") {
+            // Jika tidak login, arahkan ke halaman login
+            window.location.href = "login.html";
+        }
+    }
+</script>
+<body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Data Diri</a></li>
+        <li><a href="materi_si.html">Konsep Dasar SI</a></li>
+        <li><a href="jenis_si.html">Jenis-Jenis SI</a></li>
+        <li><a href="komponen_si.html">Komponen SI</a></li>
+        <li><a href="kesimpulan.html">Kesimpulan</a></li>
+        <li><a href="javascript:void(0)" onclick="logout()">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- Tambahkan fungsi logout di bagian akhir sebelum tag </body> -->
+<script>
+    function logout() {
+        // Hapus status login dari penyimpanan lokal
+        localStorage.removeItem("isLoggedIn");
+        // Arahkan ke halaman login
+        window.location.href = "login.html";
+    }
+</script>
+
+    <!-- Konten Utama -->
+    <div class="container">
+        <h1>HALAMAN 2: KONSEP DASAR SISTEM INFORMASI</h1>
+
+        <h2>A. Pengertian Sistem Informasi</h2>
+        <p>Sistem Informasi (SI) adalah kumpulan komponen yang saling berhubungan yang bekerja sama untuk mengumpulkan, memproses, menyimpan, dan menyebarkan informasi guna mendukung pengambilan keputusan, koordinasi, kontrol, analisis, dan visualisasi dalam sebuah organisasi.</p>
+
+        <h2>B. Tujuan Sistem Informasi</h2>
+        <ol>
+            <li>Menyediakan informasi yang akurat dan tepat waktu bagi pengguna.</li>
+            <li>Meningkatkan efisiensi dan efektivitas kerja dalam organisasi.</li>
+            <li>Mendukung proses pengambilan keputusan pada berbagai tingkatan manajemen.</li>
+            <li>Mengintegrasikan berbagai aktivitas kerja untuk menghindari duplikasi data.</li>
+            <li>Meningkatkan daya saing organisasi di pasar yang kompetitif.</li>
+        </ol>
+
+        <h2>C. Peran Sistem Informasi dalam Organisasi</h2>
+        <p>SI berperan sebagai alat bantu untuk mengelola sumber daya organisasi, memantau kinerja operasional, mengidentifikasi peluang bisnis baru, serta mengatasi tantangan yang dihadapi organisasi dalam era digital.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 [Nama Anda] - Tugas Final Konsep Sistem Informasi</p>
+    </footer>
+</body>
+</html>

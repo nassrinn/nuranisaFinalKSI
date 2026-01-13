@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Final SI - Jenis-Jenis SI</title>
+    <link rel="stylesheet" href="style.css">
+</head> <script>
+    // Cek status login saat halaman dimuat
+    window.onload = function() {
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
+        if (!isLoggedIn || isLoggedIn !== "true") {
+            // Jika tidak login, arahkan ke halaman login
+            window.location.href = "login.html";
+        }
+    }
+</script>
+<body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Data Diri</a></li>
+        <li><a href="materi_si.html">Konsep Dasar SI</a></li>
+        <li><a href="jenis_si.html">Jenis-Jenis SI</a></li>
+        <li><a href="komponen_si.html">Komponen SI</a></li>
+        <li><a href="kesimpulan.html">Kesimpulan</a></li>
+        <li><a href="javascript:void(0)" onclick="logout()">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- Tambahkan fungsi logout di bagian akhir sebelum tag </body> -->
+<script>
+    function logout() {
+        // Hapus status login dari penyimpanan lokal
+        localStorage.removeItem("isLoggedIn");
+        // Arahkan ke halaman login
+        window.location.href = "login.html";
+    }
+</script>
+
+    <!-- Konten Utama -->
+    <div class="container">
+        <h1>HALAMAN 3: JENIS-JENIS SISTEM INFORMASI</h1>
+
+        <h2>Berdasarkan Tingkatan Manajemen</h2>
+        <ol>
+            <li><strong>Sistem Informasi Operasional (SIO)</strong><br>
+                Digunakan oleh tingkat operasional untuk menangani transaksi sehari-hari, seperti Sistem Pengolahan Transaksi (TPS).</li>
+            
+            <li><strong>Sistem Informasi Manajemen (SIM)</strong><br>
+                Digunakan oleh tingkat manajemen menengah untuk memantau dan mengendalikan aktivitas operasional, serta menyediakan laporan berkala.</li>
+            
+            <li><strong>Sistem Pendukung Keputusan (SPK)</strong><br>
+                Digunakan untuk membantu pengambilan keputusan pada masalah yang tidak terstruktur atau semi-terstruktur.</li>
+            
+            <li><strong>Sistem Informasi Eksekutif (SIE)</strong><br>
+                Digunakan oleh tingkat eksekutif untuk mendapatkan gambaran umum tentang kinerja organisasi dan mengambil keputusan strategis.</li>
+        </ol>
+
+        <h2>Berdasarkan Fungsi Bisnis</h2>
+        <ul>
+            <li>Sistem Informasi Akuntansi</li>
+            <li>Sistem Informasi Manajemen Produksi</li>
+            <li>Sistem Informasi Pemasaran</li>
+            <li>Sistem Informasi Sumber Daya Manusia</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 [Nama Anda] - Tugas Final Konsep Sistem Informasi</p>
+    </footer>
+</body>
+</html>

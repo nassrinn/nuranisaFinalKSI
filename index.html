@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Final SI - Data Diri</title>
+    <link rel="stylesheet" href="style.css">
+</head> <script>
+    // Cek status login saat halaman dimuat
+    window.onload = function() {
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
+        if (!isLoggedIn || isLoggedIn !== "true") {
+            // Jika tidak login, arahkan ke halaman login
+            window.location.href = "login.html";
+        }
+    }
+</script>
+<body>
+   <nav>
+    <ul>
+        <li><a href="index.html">Data Diri</a></li>
+        <li><a href="materi_si.html">Konsep Dasar SI</a></li>
+        <li><a href="jenis_si.html">Jenis-Jenis SI</a></li>
+        <li><a href="komponen_si.html">Komponen SI</a></li>
+        <li><a href="kesimpulan.html">Kesimpulan</a></li>
+        <li><a href="javascript:void(0)" onclick="logout()">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- Tambahkan fungsi logout di bagian akhir sebelum tag </body> -->
+<script>
+    function logout() {
+        // Hapus status login dari penyimpanan lokal
+        localStorage.removeItem("isLoggedIn");
+        // Arahkan ke halaman login
+        window.location.href = "login.html";
+    }
+</script>
+
+    <!-- Konten Utama -->
+    <div class="container">
+        <h1>HALAMAN 1: DATA DIRI</h1>
+
+        <div class="profile-section">
+            <img src="anisa.jpeg" alt="FotoDiri" class="profile-photo">
+            
+            <div class="data-diri">
+                <table>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>: [Nur Anisa.s]</td>
+                    </tr>
+                    <tr>
+                        <td>NIM/NRP</td>
+                        <td>: [2024510016]</td>
+                    </tr>
+                    <tr>
+                        <td>Kelas</td>
+                        <td>: [Kelas A]</td>
+                    </tr>
+                    <tr>
+                        <td>Mata Kuliah</td>
+                        <td>: Konsep Sistem Informasi</td>
+                    </tr>
+                    <tr>
+                        <td>Dosen Pengampu</td>
+                        <td>: [Ariastuti Rahman,S.Kom,M.Kom]</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <h3>Tujuan Tugas Final</h3>
+        <p>Membuat website berbasis HTML murni yang menyajikan materi seputar konsep Sistem Informasi, dengan tampilan yang menyerupai makalah akademik. Tugas ini bertujuan untuk memperdalam pemahaman tentang materi serta kemampuan dalam membuat halaman web sederhana.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 [Nama Anda] - Tugas Final Konsep Sistem Informasi</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Final SI - Konsep Dasar SI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Data Diri</a></li>
+            <li><a href="materi_si.html">Konsep Dasar SI</a></li>
+            <li><a href="jenis_si.html">Jenis-Jenis SI</a></li>
+            <li><a href="komponen_si.html">Komponen SI</a></li>
+            <li><a href="kesimpulan.html">Kesimpulan</a></li>
+        </ul>
+    </nav>
+
+       
